@@ -1,0 +1,20 @@
+﻿@model PetModel
+@{
+    ViewData["Title"] = "Apagar Pets";
+}
+<div class="text-center">
+    
+    <h2>
+        Tem certeza de que quer excluir a informação do Pet @Model.Nome?
+    </h2>
+
+</div>
+
+<div class="d-grid gap-2">
+
+
+    <a role="button" class="btn btn-primary" asp-controller="Pet" asp-route-id="@Model.Id" asp-action="Apagar">Confirmar</a>
+
+    <a role="button" class="btn btn-danger" asp-controller="Pet" asp-action="Index">Cancelar</a>
+
+</div>
